@@ -1,0 +1,23 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-17T17:29:10.260Z",
+        "line": 3,
+        "name": "As a Modix UVL user I want to be able to navigate to the UVL homepage",
+        "description": "    Given: the user is in the home page\n    Then: the user clicks on the search all cars button",
+        "id": "uvl-homepage-features;as-a-modix-uvl-user-i-want-to-be-able-to-navigate-to-the-uvl-homepage",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": []
+      }
+    ],
+    "name": "UVL Homepage Features",
+    "description": "",
+    "id": "uvl-homepage-features",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/com/qa/features/homepage.feature",
+    "tags": []
+  }
+]
