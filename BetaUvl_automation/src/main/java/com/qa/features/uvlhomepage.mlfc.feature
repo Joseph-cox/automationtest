@@ -1,57 +1,43 @@
-Feature: Multiple language selector pop-up
+Feature: Multiple language functionality check
 Background:
+
 If the website supports the use of several languages
 As a Modix UVL user
-I want to be able to select the preferred one soon after the
-UVL is accessed
-and have the possibility to change the language whenever is
-desired
+I want to be able to select the preferred language
+And see the UVL updated based on the my selection
 
 Given: The user navigates to the UVL "Homepage"
 
-Scenario: To verify if the language selector pop-up exists
-When the page loads
-Then a language selector pop-up is prompted
+Scenario: To verify the header after selecting the language
+When the page loads and if a language is selected
+Then the selection made could be visible into the page header
 
-Scenario: To verify that the user cannot get pass the pop-up
-without selecting a language
-When the language selector is displayed
-Then in order to dismiss the pop-up, a language must be
-selected
+Scenario: To verify that the page updated after the selection
+When switching the preferred language
+And after checking the header & footer
+Then the page items will be updated to the chosen language
 
-Scenario: To verify the whole UVL after a language is
-chosen
-When any of the available languages is chosen
-Then all the website's elements and section will be translated accordingly
+Scenario: To verify if the vehicle data is translated
+When viewing the vehicle results
+And switching the preferred language
+Then the vehicle data updates accordingly
 
-Scenario: To verify the language selected
-If a language is selected as preferred
-When checking the right hand side of the sticky header
-Then the language label will be shown here
+Scenario: To verify if the placeholder images are dynamic
+When viewing the results for vehicles without images uploaded
+And the preferred language is being switched
+Then the placeholder image should be dynamic
+And updating at the same time with the language selected
 
-Scenario: To verify if the language can be opened again
-When clicking onto the language label
-Then the language selector pop-up will be prompted again
+Scenario: To verify if the Standard & Optional Equipment are interchangeable
+And opening the details page of any vehicle
+When switching the preferred language
+And scroll down to the Equipment section to verify the
+options present here
+Then if available, their description should reflect the latest language selection made
 
-Scenario: To verify if the pop-up can be dismissed without
-selecting a language
-When the language selector pop-up is opened
-Then the user can dismiss the pop-up By selecting 'X' button Or by clicking outside the pop-up
-
-
-
-Scenario: To verify if the preferred language can be switched anywhere on the UVL
-When the language selector pop-up is opened
-And choosing another language than selected
-Then this action will reflect across the UVL
-
-Scenario: To verify if the pop-up exists on Mobile
-When accessing the UVL on Mobile
-And soon after the page loads
-Then a pop-up covering the whole screen is prompted
-
-Scenario: To verify if the language selector icon exists(Mobile)
-After the pop-up is dismissed by selecting a language
-When checking the right hand side of the sticky header
-Then instead of a language description label there will be an icon
+Scenario: To verify the DLP banners
+Given that the user navigates to the DLP of any centre
+And after checking the banner, this should be in the language selected
+When the preferred language is being changed
+Then if added, the banner should updated to the language selected
 
