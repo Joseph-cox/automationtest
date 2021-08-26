@@ -1,4 +1,4 @@
-Feature: UVL Homepage Disclaimer text
+#Feature: UVL Homepage Disclaimer text
 Background:
 As a Modix UVL user
 I want to see a Volvo specific disclaimer text at the bottom of each UVL page

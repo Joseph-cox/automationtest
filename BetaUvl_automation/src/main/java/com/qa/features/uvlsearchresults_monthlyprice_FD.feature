@@ -1,4 +1,4 @@
-Feature: UVL Search Results - Monthly Price & Finance Disclaimer
+#eature: UVL Search Results - Monthly Price & Finance Disclaimer
 Background:
 In order to find out more about vehicle's finance information
 As a Modix UVL user
@@ -27,4 +27,4 @@ Scenario: To verify if the Finance disclaimer pop-up can be closed
 When the finance information is being opened
 And the user selects the 'X' or 'Close' button
 Then the pop-up should close
-And the user returned to the previous page stat
+And the user returned to the previous page state

@@ -1,4 +1,4 @@
-Feature: UVL Model Search - All Models
+#Feature: UVL Model Search - All Models
 
  #To search for a used car
 Background:

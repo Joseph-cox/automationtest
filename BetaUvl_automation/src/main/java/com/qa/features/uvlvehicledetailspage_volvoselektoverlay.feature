@@ -1,4 +1,5 @@
-Feature: UVL Search Results - Volvo Selekt overlay & 'Read more' content page
+#Author: your.email@your.domain.com
+#Feature: UVL Search Results - Volvo Selekt overlay & 'Read more' content page
 Background:
 In order to find out more vehicle information
 As a Modix UVL user

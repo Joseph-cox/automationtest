@@ -1,4 +1,4 @@
-Feature: UVL Homepage Features
+#Feature: UVL Homepage Features
 
   Scenario: As a Modix UVL user I want to be able to navigate to the UVL homepage
     Given: The user navigates to the UVL "Homepage"

@@ -1,4 +1,4 @@
-Feature: UVL Search Results - Results Count
+#Feature: UVL Search Results - Results Count
 Background:
 In order to search for a used car
 As a Modix UVL user

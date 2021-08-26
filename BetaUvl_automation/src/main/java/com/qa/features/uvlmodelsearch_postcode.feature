@@ -1,4 +1,4 @@
-Feature: UVL Model Search - Postcode/Town
+#Feature: UVL Model Search - Postcode/Town
 Background:
 In order to search for a used car
 As a Modix UVL user

@@ -1,3 +1,4 @@
+#Author: your.email@your.domain.com
 Feature: UVL Search Results - Image Count
 Background:
 In order to quickly see the vehicle's number of images

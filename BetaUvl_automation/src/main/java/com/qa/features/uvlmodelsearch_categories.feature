@@ -1,4 +1,4 @@
-Feature: UVL Model Search - Categories
+#Feature: UVL Model Search - Categories
 Background:
 In order to search for a used car
 As a Modix UVL user
