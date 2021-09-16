@@ -61,7 +61,7 @@ Scenario: Image Screen
 Given I have completed the equipment screen
 When I click 'Continue'
 Then I am directed to the image screen
-_
+
 Scenario: Description Screen
 Given I have completed the equipment check screen
 When I click 'Continue'
