@@ -14,25 +14,31 @@ public class Testbase {
 	public static Properties prop;
 	
 	
-	public Testbase()
+	public Testbase() 
 	{
 		prop = new Properties();
-	try {
-		FileInputStream fis= new FileInputStream("/Users/mfcwl/eclipse-workspace/BetaUvl_automation/src/main/java/com/qa/config/config.properties" );
-	prop.load(fis);
-	}
-	catch (FileNotFoundException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	} catch (IOException e) {
+		FileInputStream fis;
+		
+		try {
+			
+			fis = new FileInputStream("/Users/mfcwl/eclipse-workspace/BetaUvl_automation/src/main/java/com/qa/config/config.properties" );
+			prop.load(fis);
+		} 
+		
+		
+	 catch (IOException e) {
 		// TODO Auto-generated catch block
 		e.getMessage();
 	}
+
+
+
 	}
+	
 	public static void intialization()
 	{
 		String browserName =prop.getProperty("browser");
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\mfcwl\\Documents\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "Users\\mfcwl\\Documents\\chromedriver_win32");
 		 driver= new ChromeDriver();
 		 
 		 driver.manage().window().maximize();
@@ -40,7 +46,7 @@ public class Testbase {
 		 
 		 driver.manage().timeouts().pageLoadTimeout(Testutil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		 driver.manage().timeouts().implicitlyWait(Testutil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		 driver.get(prop.getProperty("url"));
+		 driver.get(prop.getProperty("Url"));
 		
 	}
 	
