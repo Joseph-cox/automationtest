@@ -13,8 +13,7 @@ Scenario: To verify the results are defaulted to sort by distance
 When the user selects the sort tab
 Then 'Distance (Closest)' is selected by default
 
-Scenario: To verify if the nearest dealer results are displayed first
-After performing the postcode search
+Scenario: To verify if the nearest dealer results are displayed first After performing the postcode search
 When checking the vehicle results
 Then the vehicles in stock at the nearest dealer are displayed
 
@@ -37,7 +36,7 @@ And the mileage sorting will display vehicles as usual
 Scenario: To verify sort by Mileage (Highest) works correctly
 When the user changes the sort to Mileage (Highest)
 Then the vehicles with the highest mileage at the nearest dealer will be displayed first
-Then right after seeing all the results at this dealer
+And right after seeing all the results at this dealer
 And the mileage sorting will display vehicles as usual
 
 Scenario: To verify sort by Price (Lowest) works correctly

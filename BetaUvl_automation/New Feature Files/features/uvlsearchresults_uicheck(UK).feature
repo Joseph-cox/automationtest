@@ -1,3 +1,4 @@
+#PBS-1100
 @Smoke
 Feature: UVL Search Results - UI Check/Features
 
@@ -18,9 +19,7 @@ Scenario: To verify main navigation panel is displayed
 When The page loads
 Then Verify that main navigation panel exists
 And Volvo link should be displayed
-And Volvo link should be clickable
-And back to original link should be displayed
-And back to original link should be clickable
+And clicking the Volvo link should direct you back to the homepage
 
 Scenario: To verify Footer panel is displayed
 When the user scrolls down to footer
@@ -58,17 +57,18 @@ Scenario: To verify the individual filter elements are displayed
 When the user clicks the 'Filter' tab
 Then the <Filter> elements are displayed
 
-#Filter
-#Price
-#Distance
-#Model
-#Trim
-#Year
-#Mileage
-#Fuel Type
-#Transmission
-#Colour
-#CO2 emissions
+                                     #Filter
+                                     #Price
+                                      #Distance
+                                      #Model
+                                      #Trim
+                                      #Year
+                                      #Mileage
+                                       #Fuel Type
+                                       #Transmission
+                                       #Colour
+                                       #CO2 emissions
+                                       
 Scenario: To verify the sort panel is displayed
 When The page loads
 Then the 'Sort' panel is displayed
@@ -77,14 +77,14 @@ Scenario: To verify the individual sorting elements are displayed
 When the user clicks the 'Sort' tab
 Then the <Sort> elements are displayed
 
-#Sort
-#Mileage (Lowest)
-#Mileage (Highest)
-#Distance (Closest)
-#Distance (Furthest)
-#Price (Lowest)
-#Price (Highest)
-#Most Recently Added
+                                     #Sort
+                                     #Mileage (Lowest)
+                                      #Mileage (Highest)
+                                      #Distance (Closest)
+                                       #Distance (Furthest)
+                                        #Price (Lowest)
+                                        #Price (Highest)
+                                        #Most Recently Added
 Scenario: To verify the vehicle panel is displayed
 When The page loads
 Then the vehicle results panel is displayed

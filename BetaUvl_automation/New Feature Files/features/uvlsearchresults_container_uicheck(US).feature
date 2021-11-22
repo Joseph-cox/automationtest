@@ -27,7 +27,7 @@ Then the following vehicle elements and data are displayed:
 #Derivative
 #CO2 Emissions	Mileage
 #Fuel Type	Transmission
-#Color	Capacity
+#Freetext Color	Capacity
 #3) Buttons:
 
 #View vehicle	Contact dealer

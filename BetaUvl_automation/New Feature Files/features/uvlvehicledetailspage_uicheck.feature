@@ -1,24 +1,25 @@
 #PBS-1116
+@Smoke
 Feature: UVL Vehicle Details Page - UI Check/Features
+
 Background:
 In order to search for a used car
 As a Modix UVL user
 I want to be able to view the vehicles details
+
 Given: The user navigates to the UVL "Vehicle Details"
 
 #Standard Page Elements
 
 Scenario: To verify page title exists
- When The page loads
+When The page loads
 Then The page title should exist
 
 Scenario: To verify main navigation panel is displayed
- When The page loads
+When The page loads
 Then Verify that main navigation panel exists
 And Volvo link should be displayed
-And Volvo link should be clickable
-And back to original link should be displayed
-And back to original link should be clickable
+And clicking the Volvo link should direct you back to the homepage
 
 Scenario: To verify Footer panel is displayed
 When the user scrolls down to footer
@@ -30,19 +31,20 @@ When the user scrolls down to footer
 Then Footer model panel should be displayed
 
 Scenario: To verify navigation menu displayed
- When The page loads
+When The page loads
 Then Verify that main navigation menu exists
 And The menu opens
 And The menu can close
 
 #Custom Page Elements
+
 Scenario: To verify the back button is displayed
-When The Page Loads
+When The page loads
 Then the 'Back' button is displayed
 And clicking the button directs the user back to "Results"
 
 Scenario: To verify the detail section tabs are displayed
- When The page loads
+When The page loads
 Then the <Tab> elements are displayed
 #Tab
 #Description
@@ -50,41 +52,41 @@ Then the <Tab> elements are displayed
 #Equipment
 
 Scenario: To verify the main image panel is displayed
- When The page loads
+When The page loads
 Then the main image panel is displayed
 
 Scenario: To verify the image carousel is displayed
- When The page loads
+When The page loads
 Then the image carousel is displayed
 
 Scenario: To verify the vehicle details panel is displayed
- When The page loads
+When The page loads
 Then the vehicle details panel is displayed
 
 Scenario: To verify the 'Contact' button is displayed
- When The page loads
+When The page loads
 Then the 'Contact' is displayed
 
 Scenario: To verify the Dealer details are displayed
- When The page loads
+When The page loads
 Then the Dealer details are displayed
 
 Scenario: To verify the 'View Retailer & Stock' link is displayed
- When The page loads
+When The page loads
 Then the 'View Retailer & Stock' link is displayed
 
 Scenario: To verify the description panel is displayed
- When The page loads
+When The page loads
 Then the description panel is displayed
 
 Scenario: To verify the specification panel is displayed
- When The page loads
+When The page loads
 Then the description panel is displayed
 
 Scenario: To verify the equipment panel is displayed
- When The page loads
+When The page loads
 Then the description panel is displayed
 
 Scenario: To verify the sticky header is displayed
- When The page loads
+When The page loads
 Then the sticky header is displayed
