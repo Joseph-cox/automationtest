@@ -13,19 +13,18 @@ Given: The user navigates to the UVL "Vehicle Details"
 Scenario: Description - default fields
 When scrolling to the Description section
 Then the country's set of fields are as followed:
-
-#Model year
-#Registration date
-#Mileage
-#Engine Capacity
-#Fuel type
-#Transmission
-#Power
-#CO2 emissions
-#Freetext colour
-#Interior colour
-#Internal number
-
+                                              #Model year
+                                              #Registration date
+                                              #Mileage
+                                              #Engine Capacity
+                                              #Fuel type
+                                              #Transmission
+                                              #Power
+                                              #CO2 emissions
+                                              #Freetext colour
+                                              #Interior colour
+                                              #Internal number
+                                              
 Scenario: Description - vehicle has data for all fields
 When all of the vehicle data is specified into the BE CMS
 Then all present fields will have the provided values displayed
@@ -37,11 +36,12 @@ Then a '-' will be displayed instead to represent the missing value
 Scenario: Specifications - default fields
 When scrolling to the Specifications section
 Then the country's set of fields if available are as followed:
+                                                            #Performance	 	Speed limit	Power
+                                                            #Economy	 	Fuel consumption
+                                                            #Environment	 	CO2 Emissions
+                                                            #Dimensions	 	Vehicle lenght	Vehicle width	Vehicle height
 
-#Performance
-#Engine
-#Environment
-#Dimensions
+
 Scenario: Specifications - vehicle has data for all section items
 When all of the vehicle data is provided into the BE CMS
 Then the field labels are displayed into the section

@@ -5,8 +5,7 @@ Feature: UVL Search Results - UI Check/Features
 
 Background:
 In order to search for a used car
-As a Modix UVL user
-I want to be able to view vehicle search results
+As a Modix UVL user I want to be able to view vehicle search results
 
 Given: The user navigates to the UVL "Results"
 
@@ -57,18 +56,15 @@ Then the 'Filter' panel is displayed
 Scenario: To verify the individual filter elements are displayed
 When the user clicks the 'Filter' tab
 Then the <Filter> elements are displayed
-
-                                       #Filter
-                                       #Price
-                                       #Distance
-                                       #Model
-                                       #Trim
+                                        #Filter
+                                        #Price
+                                        #Distance
+                                        #Model
+                                        #Fuel Type
                                         #Year
                                        #Mileage
-                                      #Fuel Type
-                                      #Transmission
-                                      #Color
-                                      
+                                       #Transmission
+                                       #Color
 Scenario: To verify the sort panel is displayed
 When The page loads
 Then the 'Sort' panel is displayed
@@ -76,16 +72,15 @@ Then the 'Sort' panel is displayed
 Scenario: To verify the individual sorting elements are displayed
 When the user clicks the 'Sort' tab
 Then the <Sort> elements are displayed
-
-                                   #Sort
-                                #Mileage (Lowest)
-                                #Mileage (Highest)
-                                 #Distance (Closest)
-                                 #Distance (Furthest)
-                                 #Price (Lowest)
-                                 #Price (Highest)
-                                 #Most Recently Added
-                                 
+                                       #Sort
+                                       #Mileage (Lowest)
+                                       #Mileage (Highest)
+                                       #Distance (Closest)
+                                       #Distance (Furthest)
+                                       #Price (Lowest)
+                                       #Price (Highest)
+                                       #Most Recently Added
+                                       
 Scenario: To verify the vehicle panel is displayed
 When The page loads
 Then the vehicle results panel is displayed
@@ -94,17 +89,18 @@ Scenario: To verify the individual vehicle data elements are displayed
 When The page loads
 Then the individual vehicle results panel is displayed
 And the vehicle model is displayed
-And the warranty logo is displayed (if applicable)
+And the warranty logo is displayed
 And the Local dealer is displayed
 And the price is displayed
 And the vehicle image is displayed
 And the image count is displayed
+And the vehicle derivative is displayed
 And the Model year is displayed
 And the Mileage is displayed
 And the Fuel Type is displayed
 And the Transmission is displayed
 And the Freetext Color is displayed
-And the Capacity is displayed
+And the Capacity is displayed (if applicable) Otherwise Warranty date is displayed instead
 And the View button is displayed
 And the Contact button is displayed
 

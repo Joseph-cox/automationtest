@@ -13,19 +13,14 @@ Given: The user navigates to the UVL "Vehicle Details"
 Scenario: Description - default fields
 When scrolling to the Description section
 Then the country's set of fields are as followed:
-
-#Seats
-#Mileage
-#Transmission
-#Power
-#Doors
-#Capacity
-#Fuel Type
-#Interior Colour
-#Registration Date
-#Registration Plate
-#Colour
-
+                                                #Mileage
+                                                #Transmission
+                                                #Power
+                                                #Fuel Type
+                                                #Interior Colour
+                                                #Registration Date
+                                                #Registration Plate
+                                                #Colour
 Scenario: Description - vehicle has data for all fields
 When all of the vehicle data is specified into the BE CMS
 Then all present fields will have the provided values displayed
@@ -36,19 +31,19 @@ Then a '-' will be displayed instead to represent the missing value
 
 Scenario: Specifications - default fields
 When scrolling to the Specifications section
-Then the country's set of fields if available are as followed:
-
-#Performance
-#Engine
-#Environment
-#Dimensions
+Then the country's  set of fields if available are as followed: 
+                                                               #Performance	 	Power
+                                                               #Engine	 	Engine type	Engine size
+                                                               #Economy	 	MPG combined
+                                                               #Environment	 	CO2 Emissions
+                                                               #Dimensions	 	Vehicle Length	Vehicle Width	Vehicle Height	Doors	Seats
 Scenario: Specifications - vehicle has data for all section items
 When all of the vehicle data is provided into the BE CMS
 Then the field labels are displayed into the section
-Then if the the '+' icon is selected
-Then the item will expand, exposing the values
-Then the '-' icon is selected afterwards
-Then the expanded item will close
+And if the the '+' icon is selected
+And the item will expand, exposing the values
+And the '-' icon is selected afterwards
+And the expanded item will close
 
 Scenario: Specifications - to verify that items can have more than 1 set of data
 When opening for e.g. the Dimensions item by selecting the '+' icon

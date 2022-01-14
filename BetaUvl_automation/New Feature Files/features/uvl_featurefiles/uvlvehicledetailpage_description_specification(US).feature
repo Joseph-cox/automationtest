@@ -13,18 +13,17 @@ Given: The user navigates to the UVL "Vehicle Details"
 Scenario: Description - default fields
 When scrolling to the Description section
 Then the country's set of fields are as followed:
-
-#Model year
-#Mileage
-#Fuel type
-#Transmission
-#Engine
-#Trim
-#Warranty
-#Freetext colour
-#Interior colour
-#VIN
-
+                                                #Model year
+                                                 #Mileage
+                                                #Fuel type
+                                                #Transmission
+                                                #Engine
+                                                #Trim
+                                                #Warranty
+                                                #Freetext colour
+                                                #Interior colour
+                                                #VIN
+                                                
 Scenario: Description - vehicle has data for all fields
 When all of the vehicle data is specified into the BE CMS
 Then all present fields will have the provided values displayed
@@ -33,29 +32,9 @@ Scenario: Description - vehicle does not have data for all fields
 When some of the vehicle data is provided into the BE CMS
 Then a '-' will be displayed instead to represent the missing value
 
-Scenario: Specifications - default fields
-When scrolling to the Specifications section
-Then the country's set of fields if available are as followed:
-#Performance
-#Engine
-#Environment
-#Dimensions
-
-Scenario: Specifications - vehicle has data for all section items
-When all of the vehicle data is provided into the BE CMS
-Then the field labels are displayed into the section
-Then if the the '+' icon is selected
-Then the item will expand, exposing the values
-Then the '-' icon is selected afterwards
-Then the expanded item will close
-
-Scenario: Specifications - to verify that items can have more than 1 set of data
-When opening for e.g. the Dimensions item by selecting the '+' icon
-Then multiple data fields will be displayed within
-
-Scenario: Specifications - vehicle does not have all data for all items
-When the vehicle data for an entire item is not specified into the BE CMS
-Then the section items will not be displayed at all into the section
+Scenario: To verify the information displayed into the Certified by Volvo section
+When scrolling to the Certified by Volvo section
+Then some of the warranty benefits will be displayed
 
 Scenario: Equipment - vehicle has features provided
 When some features are provided into the Standard & Special Equipment BE CMS sections
